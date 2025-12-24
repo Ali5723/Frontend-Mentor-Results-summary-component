@@ -1,0 +1,39 @@
+@media (max-width: 750px) {
+  .container {
+    width: calc(100vw - 40px);
+  }
+}
+@media (min-width: 320px) and (max-width: 610px) {
+  :root {
+    font-size: 15px;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    border-radius: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  .container > .header,
+  .container > .main {
+    padding: 1.5rem;
+  }
+  .container > .header {
+    border-radius: 0 0 1.75rem 1.75rem;
+  }
+  .container > .header > h1 + .score {
+    width: 8rem;
+    height: 8rem;
+    margin: 0.25rem 0;
+  }
+  .container > .header > h1 + .score > h1 {
+    font-size: 3rem;
+  }
+  .container > .header > h1 + .score + h1 {
+    margin: 0.25rem;
+  }
+  .attribution {
+    display: none;
+  }
+}

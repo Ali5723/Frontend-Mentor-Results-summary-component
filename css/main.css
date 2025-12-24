@@ -1,0 +1,104 @@
+.container {
+  width: 40rem;
+  margin: 5vh auto;
+  background-color: var(--neutral-White);
+  box-shadow: 0 0 1.75rem var(--neutral-Light-lavender);
+  border-radius: 1.75rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container > .header,
+.container > .main {
+  padding: 2.5rem;
+  display: grid;
+}
+.container > .header > h1,
+.container > .main > h1 {
+  font-size: 1.25rem;
+}
+.container > .header {
+  border-radius: 1.75rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--gradient-Light-slate-blue-background),
+    var(--gradient-Light-royal-blue-background)
+  );
+  color: var(--neutral-White);
+  justify-items: center;
+  text-align: center;
+}
+.container > .header > h1 {
+  color: hsla(0, 0%, 100%, 0.8);
+  font-weight: normal;
+}
+.container > .header > h1 + .score {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-image: linear-gradient(
+    to top,
+    var(--gradient-Persian-blue-circle),
+    var(--gradient-Violet-blue-circle)
+  );
+  margin: 2rem 0;
+}
+.container > .header > h1 + .score > h1 {
+  font-size: 4rem;
+}
+.container > .header > h1 + .score > h1 + p {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+.container > .header > h1 + .score + h1 {
+  font-size: 1.8rem;
+  color: hsla(0, 0%, 100%, 1);
+  margin-bottom: 1rem;
+}
+.container > .header > h1 + .score + h1 + p {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+.container > .main > h1 {
+  text-indent: -15px;
+}
+.container > .main > .row,
+.container > .main > .row > .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container > .main > .row > .left > p {
+  padding: 0.5rem;
+  font-weight: 600;
+}
+.container > .main > .row:nth-of-type(1) > .left > p {
+  color: var(--color-Light-red);
+}
+.container > .main > .row:nth-of-type(2) > .left > p {
+  color: var(--color-Orangey-yellow);
+}
+.container > .main > .row:nth-of-type(3) > .left > p {
+  color: var(--color-Green-teal);
+}
+.container > .main > .row:nth-of-type(4) > .left > p {
+  color: var(--color-Cobalt-blue);
+}
+.container > .main > .row > .right > p {
+  color: var(--neutral-Light-lavender);
+}
+.container > .main > .row > .right > p > span {
+  color: var(--neutral-Dark-gray-blue);
+  font-weight: 600;
+  padding: 0.25rem;
+}
+.container > .main > .button {
+  background-color: var(--neutral-Dark-gray-blue);
+  color: var(--neutral-White);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  height: 3rem;
+  margin-top: auto;
+}
